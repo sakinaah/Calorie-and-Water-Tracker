@@ -1,0 +1,68 @@
+QWidget {
+    background-color: #0f111a;
+    color: #cdd6f4;
+    font-family: 'Segoe UI', -apple-system, sans-serif;
+    font-size: 13px;
+}
+
+/* Seamless containers - no harsh box borders */
+QFrame#card {
+    background: transparent;
+    border: none;
+}
+
+/* Tactile sunken input fields */
+QLineEdit {
+    background-color: rgba(25, 27, 38, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 8px 12px;
+    color: #cdd6f4;
+}
+QLineEdit:focus {
+    border: 1px solid #89b4fa;
+    background-color: rgba(35, 38, 52, 1.0);
+}
+
+/* Vibrant elevated primary button */
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #89b4fa, stop:1 #74c7ec);
+    color: #11111b;
+    border-radius: 10px;
+    padding: 9px 16px;
+    font-weight: bold;
+    border: none;
+}
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #b4befe, stop:1 #89b4fa);
+}
+
+/* Small custom action buttons */
+QPushButton#actionBtn {
+    background: rgba(49, 50, 68, 0.8);
+    color: #89b4fa;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 7px 14px;
+}
+QPushButton#actionBtn:hover {
+    background: rgba(69, 71, 90, 1.0);
+    color: #cdd6f4;
+}
+
+/* Typography */
+QLabel {
+    background: transparent;
+}
+QLabel#titleLabel {
+    font-size: 16px;
+    font-weight: 700;
+    color: #cdd6f4;
+    letter-spacing: 0.4px;
+}
+QLabel#subLabel {
+    color: #a6adc8;
+    font-size: 12px;
+    font-weight: 500;
+}
